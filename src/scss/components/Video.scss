@@ -1,0 +1,334 @@
+#Video{
+	a{
+		cursor:pointer;
+	}
+	
+	img{ }
+	
+	
+	.btn-showreel{
+		@include btn-style();
+		margin:20px 0 ;
+	}
+	
+	.vertical-alignment-helper {
+		display:table;
+		height: 100%;
+		width: 100%;
+		pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+	}
+	
+	.caseItem{
+		.overlay{
+			width: 87%;
+		}
+	}
+	
+	.VideoModal{
+		
+		.modal-dialog{
+
+		/* To center vertically */
+		display: table-cell;
+		vertical-align: middle;
+		pointer-events:none;
+		
+			.modal-content{
+				border-radius:0;
+				border: none;
+				width:inherit;
+				height:inherit;
+				/* To center horizontally */
+				margin: 0 auto;
+				pointer-events: all;
+		
+				.modal-body{
+					padding:3px;
+					background-color:black;
+				}
+			}
+		}
+	}
+	
+	
+	
+	#MediaKits{
+		
+		P{
+			margin:20px 0 ;
+			clear:both;
+		}
+		
+		.DisplaymediaKits{
+			position:relative;
+			padding: 15px;
+			
+			img{
+			width:100%;
+			}
+	
+			.overlay:hover{
+				color:white;
+				opacity: .9;
+				 transition: opacity 0.7s;
+  				-webkit-transition: opacity 0.7s;
+			}
+			.overlay{
+				background-color: black;
+				position: absolute;
+				width: 84%;
+    			height: 84%;
+				opacity: 0;
+				margin: 3%;
+				text-align: center;
+				color:white;
+				transition: opacity 0.7s;
+				-webkit-transition: opacity 0.7s;	
+		
+			div{
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				padding:0 10%;
+			
+				i{
+					font-size: 60px;
+					font-weight: 100;
+					margin-bottom: 10px;
+				}
+				h3{
+					font-family:$font-paragraph;
+					line-height: 21px;
+				}
+			}
+		}
+	
+		}	
+	}	
+}
+
+
+
+/* iPad pro (portrait) ----------- */
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) {
+	/* Home page Podcast Items */
+
+	#Video{
+		.caseItem {
+				.overlay{
+					width: 84% !important;
+    				height: 81% !important;
+				}
+			}
+	}
+	#Video #MediaKits .DisplaymediaKits {padding: 19px; }
+}
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : landscape) {
+	/* Home page Podcast Items */
+		
+	/* End Home Page */
+	#Video{
+		.caseItem {
+				.overlay{
+					width: 86%;
+    				height: 84%;
+			}
+		}
+	}
+	#Video #MediaKits .DisplaymediaKits { }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+/* Home page Podcast Items */
+
+
+	#Video{
+		.caseItem {
+				.overlay{
+			 		width: 85%;
+   			 		height: 80%;
+			}
+		}
+	}
+	#Video #MediaKits .DisplaymediaKits {padding: 10px; }
+
+
+}
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	/* Styles */	
+
+
+	#Video{
+		.caseItem {
+				.overlay{
+					width: 82%;
+    				height: 78%;
+			}
+		}
+	}
+	#Video #MediaKits .DisplaymediaKits {padding: 10px; }
+	#Video #MediaKits .DisplaymediaKits .overlay div  i{font-size:16px;}
+	#Video #MediaKits .DisplaymediaKits .overlay div h3{font-size:12px;     line-height: 15px !important;}
+
+}
+
+/* iphone 6 plus (portrait and landscape) ----------- */
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: portrait){
+	/* Styles */
+
+	#Video{
+		.caseItem {
+				.overlay{
+			    	width: 79% !important;
+   					height: 75% !important;
+				 
+				 div{
+					 
+					i{
+						font-size:48px;
+					}
+					h3{
+						line-height: 16px;
+    					font-size: 12px;
+					} 
+				 }
+			}
+		}
+	}
+
+	#Video #MediaKits .DisplaymediaKits {padding: 10px; }
+	#Video #MediaKits .DisplaymediaKits .overlay div  i{font-size:16px;}
+	#Video #MediaKits .DisplaymediaKits .overlay div h3{font-size:12px;     line-height: 15px !important;}
+
+}
+
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: landscape){
+	/* Styles */
+	
+	#Video{
+		.caseItem {
+				.overlay{
+			        width: 86%;
+    				height: 83%;
+			}
+		}
+	}
+	
+}
+
+/* iphone 6 (portrait and landscape) ----------- */
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: portrait)
+	{
+	/* Styles */
+
+		#Video{
+			.caseItem{
+				padding: 6px;
+					.overlay{
+			    		width: 87% !important;
+    					height: 83% !important;
+			
+				}
+			}
+		}
+
+	#Video #MediaKits .DisplaymediaKits {padding: 10px; }
+	#Video #MediaKits .DisplaymediaKits .overlay div  i{font-size:16px;}
+	#Video #MediaKits .DisplaymediaKits .overlay div h3{font-size:12px;     line-height: 15px !important;}
+
+}
+
+
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: landscape)
+	{
+	/* Styles */
+
+	#Video{
+		.caseItem {
+			padding: 12px;
+				.overlay{
+			    width: 85%;
+				height: 82%;
+				}
+		}
+	}
+
+}
+
+/* Smartphones () ----------- */
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-height : 568px)
+ and (orientation: portrait){
+	/* Styles */
+	
+	#Video{
+			.caseItem{
+				padding: 5px;
+					.overlay{
+			    	 width: 86%;
+    				height: 82%;
+			
+				}
+			}
+		}
+
+	#Video #MediaKits .DisplaymediaKits {padding: 10px; }
+	#Video #MediaKits .DisplaymediaKits .overlay div  i{font-size:16px;}
+	#Video #MediaKits .DisplaymediaKits .overlay div h3{font-size:12px;     line-height: 15px !important;}		
+}
+
+@media only screen 
+and (max-device-width  : 412px) and (orientation: portrait){
+/* Styles */
+
+	#Video{
+		.caseItem {
+			    padding: 6px;
+				.overlay{
+			     width: 86%;
+    			height: 83%;
+				
+				div{
+					 
+					i{
+						font-size:48px;
+					}
+					h3{
+						line-height: 16px;
+    					font-size: 12px;
+					} 
+				 }
+				
+			}
+		}
+	}
+	#Video #MediaKits .DisplaymediaKits {padding: 8px; }
+	#Video #MediaKits .DisplaymediaKits .overlay div  i{font-size:16px;}
+	#Video #MediaKits .DisplaymediaKits .overlay div h3{font-size:12px;     line-height: 15px !important;}
+}

@@ -1,0 +1,243 @@
+#whatwedo{
+	
+	background-position: 60% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;	
+	padding:0;
+	
+	
+	#bg-carousel{
+		.carousel-inner{
+
+			.slide0{ 
+				background-position: center center;
+				background-size: cover;
+
+					.SlideShow{
+						
+						padding: 9% 1%;
+						
+						h1{ text-align:center;}	
+						
+						.platform{
+							img{ width: 90%; margin: 0 5%;}	
+							p{ text-align:center; font-size: 13px;}
+							
+						}
+						.partner{
+							img{ width: 100%;}		
+						}
+					}
+			}
+			.slide1{ 
+				
+				background-position:70% center; 
+				
+
+					.SlideShow{
+						
+						padding: 7% 0;
+						
+						h1{ text-align:left;}	
+						p{}
+					}	
+			}
+		}
+	}	
+}
+#bg-carousel, .carousel-inner,.item {	min-height:420px;}
+
+
+
+/* ********************************************************************************** */
+/* Media Querys */
+/* ********************************************************************************** */
+	
+
+/* ********************************************************* */
+/* Ipad/Tablets * ***************************** */
+/* ********************************************************* */
+
+
+
+/* iPad pro (portrait) ----------- */
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) {
+	/* Home page Podcast Items */
+
+	#whatwedo #bg-carousel .carousel-inner .slide0 .SlideShow { padding: 14% 1%; }
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : landscape) {
+	/* Home page Podcast Items */
+		
+	/* End Home Page */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+/* Home page Podcast Items */
+	#whatwedo #bg-carousel .carousel-inner .slide0 .SlideShow { padding: 14% 0%; }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1023px) 
+and (orientation : portrait) {
+	/* Styles */	
+	#whatwedo #bg-carousel .carousel-inner .slide0 .SlideShow { padding: 3% 13% }
+	#whatwedo #bg-carousel .carousel-inner .slide1 .SlideShow { padding: 5% 20%; }
+}
+
+/* ********************************************************* */
+/* Large Smart Phones * ***************************** */
+/* ********************************************************* */
+
+
+/* Catch ALl Phone Devices (portrait and landscape) ----------- */ 
+@media only screen and (max-device-width: 736px) {		
+	/* Styles */
+} 
+
+
+
+
+
+@media only screen and (max-device-width: 736px)and 
+	(orientation: portrait) {
+
+}
+
+/* iphone 6 plus (portrait and landscape) ----------- */
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: portrait){
+	/* Styles */
+
+	.platform{height:117px;}
+	#whatwedo #bg-carousel .carousel-inner .slide0 .SlideShow { padding: 3% 0%; }
+	#whatwedo #bg-carousel .carousel-inner .slide1 .SlideShow { padding: 21% 3%; }
+}
+
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: landscape){
+	/* Styles */
+	
+	.platform{height: 97px; width: 16%;}
+	#whatwedo #bg-carousel .carousel-inner .slide0 .SlideShow{ padding:1%;}
+	#whatwedo #bg-carousel .carousel-inner .slide1 .SlideShow { padding:16% 3%; }
+}
+
+
+/* iphone 6 (portrait and landscape) ----------- */
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: portrait)
+	{
+	/* Styles */
+	.platform{height:117px;}
+	#whatwedo #bg-carousel .carousel-inner .slide0 .SlideShow { padding: 3% 0%; }
+	#whatwedo #bg-carousel .carousel-inner .slide1 .SlideShow { padding: 18% 3%; }
+
+}
+
+
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: landscape)
+	{
+	/* Styles */
+
+}
+/* ********************************************************* */
+/* Smart Phones * ***************************** */
+/* ********************************************************* */
+
+
+
+
+/* Smartphones () ----------- */
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-height : 568px)
+ and (orientation: portrait){
+	/* Styles */
+
+	.platform{height:117px;}
+	#whatwedo #bg-carousel .carousel-inner .slide0 .SlideShow { padding: 5% 0% 5%; }
+	#whatwedo #bg-carousel .carousel-inner .slide1 .SlideShow { padding: 13% 3% !important; }
+
+}
+
+
+@media only screen and 
+	(min-device-width: 320px) and 
+	(max-device-width: 568px) and (orientation: landscape){
+	/* Styles */
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	/* Styles */
+
+	
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-device-width  : 412px) and (orientation: portrait){
+/* Styles */
+
+}
+@media only screen 
+and (max-device-width  : 412px) and (orientation: landscape){
+	/* Styles */
+
+}
+
+@media only screen 
+and (max-device-width  : 360px) and (orientation: portrait){
+	/* Styles */
+		.platform{height:117px;}
+	#whatwedo #bg-carousel .carousel-inner .slide0 .SlideShow { padding: 5% 0% 5%; }
+	#whatwedo #bg-carousel .carousel-inner .slide1 .SlideShow { padding: 18% 3%; }
+
+}
+
+@media only screen 
+and (max-device-width  : 360px) and (orientation: landscape){
+	
+}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

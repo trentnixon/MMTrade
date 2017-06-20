@@ -1,0 +1,452 @@
+#TalkingLifestyle{
+	
+	.container{	position:relative; }
+	
+	.showcaseItem {
+		padding:15px;
+		cursor:pointer;
+	
+	
+		img{
+			width:100%;
+		}
+		
+		
+		.overlay:hover{
+				color:white;
+				opacity: .8;
+				 transition: opacity 0.7s;
+  				-webkit-transition: opacity 0.7s;
+			}
+			
+		.overlay{
+				background-color: black;
+				position: absolute;
+				width: 86%;
+				height: 86%;
+				opacity: 0;
+				margin: 3%;
+				text-align: center;
+				color:white;
+				transition: opacity 0.7s;
+				-webkit-transition: opacity 0.7s;	
+		
+			div{
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				padding:0 10%;
+			
+				i{
+					font-size: 60px;
+					font-weight: 100;
+					margin-bottom: 10px;
+				}
+				h3{
+					font-family:$font-paragraph;
+					line-height: 21px;
+				}
+			}
+		}
+	
+	}
+}
+
+#Stage{
+	position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 1000;
+	opacity:0;
+	text-align:center;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	
+	#StageHeader{
+		background-color:white;
+		border:1px solid #b5b5b5;
+		padding:35px;
+		
+		.close{ position: initial; }
+		
+		.HeaderIcon{ height:90px; width:90px; float:left;}
+		.HeaderLogo{ float:left; margin: 10px 30px;}
+		h1{
+			margin:0;
+			}
+		
+		h2{
+			font-size:20px;
+			}
+		button{
+			    background-color: transparent;
+				border: none;
+				font-size: 30px;
+				color: #9b9b9b;
+				outline:none;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+		}
+		button:hover{
+			color:#000;
+		}
+	}	
+	#Stage_Left{
+		text-align:left;
+    	padding: 35px 10px 40px 50px;
+    		
+			.TextBox{
+				min-height:255px;
+				p{
+					color: white;
+					margin: 0 0 15px;
+				}
+			}
+	}
+	#Stage_Right{
+		
+		padding: 35px 30px 40px 30px;
+		.transparentDiv{
+			background-image:URL("./img/white-transparent.png");
+			padding:30px 30px;
+		
+		
+		
+			h2.PanelHeading{
+				text-align:center;
+				color:white;
+				font-size: 21px;
+			    line-height: 27px;
+    			padding: 6% 0;
+				text-transform:uppercase;
+
+			}
+			
+			
+			.supportingContent{
+				margin: 25px 0;
+				min-height: 237px;
+					
+				.SupportingImage{
+					padding:0;
+				
+						img{ }
+				
+				}
+			}
+			
+			
+			.Majoricon{
+				padding:11px;
+				
+				img{
+					width: 100%;
+    				height: 100%;
+				}
+			}
+			
+			.Smallicon{
+				padding:15px;
+				
+				img{
+					width: 100%;
+    				height: 100%;
+				}	
+			}
+			
+		}
+	}
+}
+#Stage.showStage{
+	transition: opacity 0.4s;
+	opacity: 1;
+}
+
+
+
+/* ********************************************************************************** */
+/* Media Querys */
+/* ********************************************************************************** */
+
+
+	
+
+/* ********************************************************* */
+/* Ipad/Tablets * ***************************** */
+/* ********************************************************* */
+
+
+
+/* iPad pro (portrait) ----------- */
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) {
+	#TalkingLifestyle .showcaseItem{ padding:13px;}
+	#Stage #StageHeader{ padding:15px;}
+	#Stage #Stage_Left{ padding: 5px 5px 0px 20px; }
+	#Stage #Stage_Right { padding: 5px 6px 0px 5px; }
+	#Stage #Stage_Left .TextBox p{ line-height: 23px; }
+    
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : landscape) {
+	/* Home page Podcast Items */
+		
+	/* End Home Page */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+/* Home page Podcast Items */
+	#TalkingLifestyle .showcaseItem{ padding:10px;}
+	
+	#Stage #StageHeader{ padding:15px;}
+	#Stage #StageHeader h1{  font-size:28px; line-height: 42px;}
+	
+	
+	#Stage #Stage_Left{ padding: 5px 5px 0px 20px; }
+	#Stage #Stage_Left .TextBox {min-height: 240px;}
+	#Stage #Stage_Left .TextBox p { margin: 5px 0; line-height: 23px; }
+	
+	#Stage #Stage_Right { padding: 5px 6px 0px 5px; }
+	#Stage #Stage_Right .transparentDiv{padding:4px;}
+	#Stage #Stage_Right .transparentDiv .supportingContent{margin: 15px 0; padding: 10px;}
+	#Stage #Stage_Right .transparentDiv .supportingContent .SupportingImage { padding: 8px; }
+	#Stage #Stage_Right .transparentDiv h2.PanelHeading{font-size: 15px; line-height: 18px; padding: 7% 0;}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	/* Styles */	
+	#TalkingLifestyle .showcaseItem{ padding:10px;}
+	
+	#Stage #StageHeader{ padding:5px;}
+	#Stage #StageHeader .HeaderIcon{   width: 37%;  height: inherit;}
+	#Stage #StageHeader .HeaderLogo { margin: 10px 2.5%; width: 45%; }
+
+	#Stage #StageHeader h1 { margin: 5px 0 !important; font-size: 16px; line-height: 65px; }
+	
+	
+	#Stage #Stage_Left{ padding: 5px 5px 0px 20px; }
+	#Stage #Stage_Left .TextBox {min-height: 240px;}
+	#Stage #Stage_Left .TextBox p { margin: 5px 0; line-height: 19px; font-size: 12px;}
+	
+	#Stage #Stage_Right { padding: 5px 6px 0px 5px; }
+	#Stage #Stage_Right .transparentDiv{padding:4px;}
+	#Stage #Stage_Right .transparentDiv .supportingContent{margin: 15px 0; padding: 10px;}
+	#Stage #Stage_Right .transparentDiv .supportingContent .SupportingImage { padding: 8px; }
+	#Stage #Stage_Right .transparentDiv h2.PanelHeading{font-size: 15px; line-height: 18px; padding: 7% 0;}
+}
+
+/* ********************************************************* */
+/* Large Smart Phones * ***************************** */
+/* ********************************************************* */
+
+
+/* Catch ALl Phone Devices (portrait and landscape) ----------- */ 
+@media only screen and (max-device-width: 736px) {		
+	/* Styles */
+} 
+
+
+
+
+
+@media only screen and (max-device-width: 736px)and 
+	(orientation: portrait) {
+
+}
+
+/* iphone 6 plus (portrait and landscape) ----------- */
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: portrait){
+	/* Styles */
+	#TalkingLifestyle .showcaseItem{ padding:8px;}
+	#Stage #StageHeader{ padding:5px;}
+	
+	/* Header */
+	#Stage #StageHeader .HeaderIcon{ width:50%; height:50%;}
+	#Stage #StageHeader .HeaderLogo { margin: 10px 2.5%; width: 45%; }
+
+	#Stage #StageHeader h1 { margin: 5px 0 !important; font-size: 16px; line-height: 18px; }
+	/* Left */
+	#Stage #Stage_Left { text-align: left;  padding: 4% 5%; }
+	#Stage #Stage_Left .TextBox p {     margin: 0 0 12px; line-height: 24px; font-size: 14px; }
+}
+
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: landscape){
+	/* Styles */
+	
+		/* Styles */
+	#TalkingLifestyle .showcaseItem{ padding:15px;}
+	#Stage #StageHeader{ padding:5px;}
+	
+	/* Header */
+	
+	#Stage #StageHeader .HeaderIcon{ width: 30%; height: initial;  margin: 4% 0;}
+	#Stage #StageHeader .HeaderLogo { margin: 10px 2.5%; width: 45%; }
+	#Stage #StageHeader h1 { margin: 5px 0 !important; font-size: 20px; line-height: 69px; }
+	/* Left */
+	#Stage #Stage_Left { text-align: left;  padding: 4% 5%; }
+	#Stage #Stage_Left .TextBox p { margin: 0 0 10px; line-height: 25px; font-size: 15px; }
+	
+	
+}
+
+
+/* iphone 6 (portrait and landscape) ----------- */
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: portrait)
+	{
+	/* Styles */
+	#TalkingLifestyle .showcaseItem{ padding:8px;}
+	#Stage #StageHeader{ padding:5px;}
+	
+	/* Header */
+	#Stage #StageHeader .HeaderIcon{ width:50%; height:50%;}
+	#Stage #StageHeader .HeaderLogo { margin: 10px 2.5%; width: 45%; }
+
+	#Stage #StageHeader h1 { margin: 5px 0 !important; font-size: 16px; line-height: 18px; }
+	/* Left */
+	#Stage #Stage_Left { text-align: left;  padding: 4% 5%; }
+	#Stage #Stage_Left .TextBox p {     margin: 0 0 12px; line-height: 22px; font-size: 13px; }
+}
+
+
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: landscape)
+	{
+	/* Styles */
+
+}
+/* ********************************************************* */
+/* Smart Phones * ***************************** */
+/* ********************************************************* */
+
+
+
+
+/* Smartphones () ----------- */
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-height : 568px)
+ and (orientation: portrait){
+	/* Styles */
+	
+	#TalkingLifestyle .showcaseItem{ padding:6px;}
+	#TalkingLifestyle .showcaseItem .overlay div i { font-size: 30px;}
+	#TalkingLifestyle .showcaseItem .overlay div h3 {line-height: 16px; font-size: 11px; }
+	#Stage #StageHeader{ padding:5px;}
+	
+	/* Header */
+	#Stage #StageHeader .HeaderIcon{ width:50%; height:50%;}
+	#Stage #StageHeader .HeaderLogo { margin: 10px 2.5%; width: 45%; }
+
+	#Stage #StageHeader h1 { margin: 0 !important; font-size: 16px; line-height: 18px; }
+	/* Left */
+	#Stage #Stage_Left { text-align: left;  padding: 4% 5%; }
+	#Stage #Stage_Left .TextBox p {     margin: 0 0 12px; line-height: 19px; font-size: 12px; }
+
+}
+
+@media only screen and 
+	(min-device-width: 320px) and 
+	(max-device-width: 568px) and (orientation: landscape){
+	/* Styles */
+	#TalkingLifestyle .showcaseItem{ padding:11px;}
+	#Stage #StageHeader{ padding:5px;}
+	
+	/* Header */
+	
+	#Stage #StageHeader .HeaderIcon{ width: 30%; height: initial;  margin: 4% 0;}
+	#Stage #StageHeader .HeaderLogo { margin: 10px 2.5%; width: 45%; }
+	#Stage #StageHeader h1 { margin: 5px 0 !important; font-size: 16px; line-height: 27px; }
+	/* Left */
+	#Stage #Stage_Left { text-align: left;  padding: 4% 5%; }
+	#Stage #Stage_Left .TextBox p { margin: 0 0 10px; line-height: 25px; font-size: 15px; }
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	/* Styles */
+
+	
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-device-width  : 412px) and (orientation: portrait){
+/* Styles */
+
+}
+@media only screen 
+and (max-device-width  : 412px) and (orientation: landscape){
+	/* Styles */
+
+}
+
+@media only screen 
+and (max-device-width  : 360px) and (orientation: portrait){
+	/* Styles */
+	#TalkingLifestyle .showcaseItem{ padding:6px;}
+	#TalkingLifestyle .showcaseItem .overlay div i { font-size: 30px;}
+	#TalkingLifestyle .showcaseItem .overlay div h3 {line-height: 16px; font-size: 11px; }
+	#Stage #StageHeader{ padding:5px;}
+	
+	/* Header */
+	#Stage #StageHeader .HeaderIcon{ width:50%; height:50%;}
+	#Stage #StageHeader .HeaderLogo { margin: 10px 2.5%; width: 45%; }
+
+	#Stage #StageHeader h1 { margin: 0 !important; font-size: 16px; line-height: 18px; }
+	/* Left */
+	#Stage #Stage_Left { text-align: left;  padding: 4% 5%; }
+	#Stage #Stage_Left .TextBox p {     margin: 0 0 12px; line-height: 19px; font-size: 12px; }
+}
+
+@media only screen 
+and (max-device-width  : 360px) and (orientation: landscape){
+	#TalkingLifestyle .showcaseItem{ padding:13px;}
+}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

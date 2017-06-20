@@ -1,0 +1,330 @@
+#bg-fade-carousel{
+	
+	.carousel-inner{
+		.item{
+			background-color: rgba(0, 0, 0, 0.2);
+			min-height: 800px;
+			
+				.DisplaySlide{
+					background-position-x: center !important;
+					min-height: 800px; /* Must have a height or min-height set due to use of background images */
+					padding: 0;
+					padding-top: 92px;
+					padding-bottom: 120px;
+					background-size: cover !important;
+					background-repeat:no-repeat !important;
+					background-position: center bottom;
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover;
+				}
+
+		.top-description {
+				
+			margin-top: 30px;
+			margin-bottom: 20px;
+				
+			h2 {
+				
+				font-size: $size-hero;
+				line-height: 54px;
+				margin: 0px 0 20px 0;
+				font-weight: 600; 
+				text-align: center;
+				text-transform:uppercase;
+			}
+	
+			p {
+				text-transform:uppercase;
+				font-size: $size-hero-sub;
+				line-height: 30px;
+				text-align: center;
+				color: $color-h2;
+			}
+		}
+	}
+}
+}
+
+/* Carousel Fade Effect 
+	.carousel.carousel-fade .carousel-inner .item {
+		-webkit-transition: opacity 1s linear;
+		-moz-transition: opacity 1s linear;
+		-ms-transition: opacity 1s linear;
+		-o-transition: opacity 1s linear;
+		transition: opacity 1s linear;
+		opacity: .5;
+	}
+	.carousel.carousel-fade .carousel-inner .active.item {
+		opacity: 1;
+	}
+	.carousel.carousel-fade .carousel-inner .active.left,
+	.carousel.carousel-fade .carousel-inner .active.right {
+		left: 0;
+		z-index: 2;
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}*/
+	
+	
+	
+/* ******************************************** */	
+/* Media Queries *****************************  */	
+
+
+/* ********************************************************* */
+/* Ipad/Tablets * ***************************** */
+/* ********************************************************* */
+
+
+
+/* iPad pro (portrait) ----------- */
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) {
+	/* Home page Podcast Items */
+	#bg-fade-carousel .carousel-inner .item .DisplaySlide,
+	#bg-fade-carousel .carousel-inner .item{min-height: 610px; }
+	
+	/* font styles */
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description h2{}
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description p{}
+	
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description h2{ font-size: 32px; line-height: 40px;}
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description p{}
+
+
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : landscape) {
+	/* Home page Podcast Items */
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description h2{font-size: 55px; line-height: 70px;}
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description p{font-size: 30px; line-height: 50px;}
+	
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description h2{ font-size: 45px; line-height: 60px;}
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description p{font-size: 25px; line-height: 35px;}	
+		
+	/* End Home Page */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1023px) 
+and (orientation : portrait) {
+	/* Styles */	
+	#bg-fade-carousel .carousel-inner .item .DisplaySlide,
+	#bg-fade-carousel .carousel-inner .item{min-height: 465px; }
+	
+	/* font styles */
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description h2{font-size: 30px; line-height: 38px;}
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description p{font-size: 22px; line-height: 16px;}
+	
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description h2{ font-size: 24px; line-height: 0px;}
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description p{font-size: 17px; line-height: 26px; margin: 0 24%;}
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+/* Home page Podcast Items */
+	#bg-fade-carousel .carousel-inner .item .DisplaySlide,
+	#bg-fade-carousel .carousel-inner .item{min-height: 625px; }
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description h2{font-size: 40px; line-height: 50px;}
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description p{font-size: 28px; line-height: 40px;}
+	
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description h2{ font-size: 42px; line-height: 48px;}
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description p{font-size: 18px; line-height: 10px;}	
+}
+
+
+
+/* ********************************************************* */
+/* Large Smart Phones * ***************************** */
+/* ********************************************************* */
+
+
+/* Catch ALl Phone Devices (portrait and landscape) ----------- */ 
+@media only screen and (max-device-width: 736px) {		
+	/* Styles */
+} 
+
+
+
+
+
+@media only screen and (max-device-width: 736px)and 
+	(orientation: portrait) {
+
+}
+
+/* iphone 6 plus (portrait and landscape) ----------- */
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: portrait){
+	/* Styles */
+
+	#bg-fade-carousel .carousel-inner,
+	#bg-fade-carousel .carousel-inner .item .DisplaySlide,
+	#bg-fade-carousel .carousel-inner .item{min-height: 301px !important; background-size: contain !important; padding: 1px 0; }
+	
+	/* font styles */
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description h2{font-size: 21px !important; line-height: 25px !important; padding-top: 69px;}
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description p{font-size: 15px; line-height: 16px;}
+	
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description h2{ font-size: 18px  !important; line-height: 20px; padding-top: 69px; margin-bottom:5px;}
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description p{font-size: 13px  !important; line-height: 17px !important; margin: 0 15%;}
+
+
+}
+
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: landscape){
+	/* Styles */
+	#bg-fade-carousel .carousel-inner,
+	#bg-fade-carousel .carousel-inner .item .DisplaySlide,
+	#bg-fade-carousel .carousel-inner .item{min-height: 440px; background-size: contain !important; padding: 1px 0; }
+	
+	/* font styles */
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description h2{font-size: 35px; line-height: 45px; padding-top: 69px;}
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description p{font-size: 22px; line-height: 5px;}
+	
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description h2{ font-size: 28px; line-height: 50px; padding-top: 70px; margin-bottom:0px;}
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description p{font-size: 18px; line-height: 25px; margin: 0 15%;}
+	
+}
+
+
+
+
+/* iphone 6 (portrait and landscape) ----------- */
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: portrait)
+	{
+	/* Styles */
+		#bg-fade-carousel .carousel-inner,
+	#bg-fade-carousel .carousel-inner .item .DisplaySlide,
+	#bg-fade-carousel .carousel-inner .item{min-height: 279px; background-size: contain !important; padding: 1px 0; }
+	
+	/* font styles */
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description h2{font-size: 19px; line-height: 22px; padding-top: 69px; margin-bottom:10px;}
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description p{font-size: 15px; line-height: 16px;}
+	
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description h2{ font-size: 17px; line-height: 20px; padding-top: 69px; margin-bottom:5px;}
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description p{font-size: 11px; line-height: 15px; margin: 0 15%;}
+
+}
+
+
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: landscape)
+	{
+	/* Styles */
+	#bg-fade-carousel .carousel-inner,
+	#bg-fade-carousel .carousel-inner .item .DisplaySlide,
+	#bg-fade-carousel .carousel-inner .item{min-height: 430px; background-size: contain !important; padding: 1px 0; }
+	
+	/* font styles */
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description h2{font-size: 35px; line-height: 45px; padding-top: 69px;}
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description p{font-size: 22px; line-height: 16px;}
+	
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description h2{ font-size: 28px; line-height: 50px; padding-top: 70px; margin-bottom:0px;}
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description p{font-size: 18px; line-height: 25px; margin: 0 15%;}
+
+}
+/* ********************************************************* */
+/* Smart Phones * ***************************** */
+/* ********************************************************* */
+
+
+
+
+/* Smartphones () ----------- */
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-height : 568px)
+ and (orientation: portrait){
+	/* Styles */
+
+	#bg-fade-carousel .carousel-inner,
+	#bg-fade-carousel .carousel-inner .item .DisplaySlide,
+	#bg-fade-carousel .carousel-inner .item{min-height: 252px !important; background-size: contain !important; padding: 1px 0; }
+	
+	/* font styles */
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description h2{font-size: 15px; line-height: 16px; padding-top: 69px;margin-bottom:10px;}
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description p{font-size: 12px; line-height:5px;}
+	
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description h2{ font-size: 13px; line-height: 16px; padding-top: 69px; margin-bottom:5px;}
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description p{font-size: 11px; line-height: 15px; margin: 0 15%;}
+
+}
+
+@media only screen and 
+	(max-device-width: 568px) and (orientation: landscape){
+	/* Styles */
+
+	#bg-fade-carousel .carousel-inner,
+	#bg-fade-carousel .carousel-inner .item .DisplaySlide,
+	#bg-fade-carousel .carousel-inner .item{min-height: 378px !important; background-size: contain !important; padding: 1px 0; }
+	
+	/* font styles */
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description h2{font-size: 20px; line-height: 30px; padding-top: 69px;}
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description p{font-size: 16px; line-height: 16px;}
+	
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description h2{ font-size: 20px; line-height: 30px; padding-top: 70px; margin-bottom:0px;}
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description p{font-size: 15px; line-height: 20px; margin: 15px 15%;}
+}
+
+
+@media only screen 
+and (max-device-width  : 360px) and (orientation: portrait){
+	/* Styles */
+
+	#bg-fade-carousel .carousel-inner,
+	#bg-fade-carousel .carousel-inner .item .DisplaySlide,
+	#bg-fade-carousel .carousel-inner .item{min-height: 272px; background-size: contain !important; padding: 1px 0; }
+	
+	/* font styles */
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description h2{font-size: 15px; line-height: 16px; padding-top: 67px;margin-bottom:15px;}
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description p{font-size: 12px; line-height:16px;}
+	
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description h2{ font-size: 13px; line-height: 16px; padding-top: 69px; margin-bottom:5px;}
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description p{font-size: 11px; line-height: 15px; margin: 0 15%;}
+}
+
+@media only screen 
+and (max-device-width  : 640px) and (orientation: landscape){
+		#bg-fade-carousel .carousel-inner,
+	#bg-fade-carousel .carousel-inner .item .DisplaySlide,
+	#bg-fade-carousel .carousel-inner .item{min-height: 415px ; background-size: contain !important; padding: 1px 0; }
+	
+	/* font styles */
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description h2{font-size: 30px !important; line-height: 35px !important; padding-top: 90px;}
+	#bg-fade-carousel .carousel-inner .item .slide0 .top-description p{font-size: 20px !important; line-height: 16px;}
+	
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description h2{ font-size: 25px; line-height: 30px; padding-top: 80px; margin-bottom:0px;}
+	#bg-fade-carousel .carousel-inner .item .slide1 .top-description p{font-size: 15px; line-height: 20px; margin: 15px 15%;}
+}

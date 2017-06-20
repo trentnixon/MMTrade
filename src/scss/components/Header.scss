@@ -1,0 +1,49 @@
+/* **************************************************************** */
+/***** Header *****/
+/* **************************************************************** */
+
+.top-content {
+    
+	margin: 0 auto;
+    text-align: center;
+    color: $color-h2;
+ 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+
+	.inner-bg {
+			
+			padding: 0;
+			padding-top: 120px;
+			padding-bottom: 120px;
+			background-color: rgba(0, 0, 0, 0.2);
+			min-height: 810px;
+
+			.top-description {
+				
+				margin-top: 30px;
+				margin-bottom: 20px;
+				
+				
+					h2 {
+						font-size: $size-hero;
+						line-height: 54px;
+						margin: 10px 0 30px 0;
+						font-weight: 600; 
+						text-align: center;
+						text-transform:uppercase;
+					}
+	
+					p {
+						text-transform:uppercase;
+						font-size: $size-hero-sub;
+						line-height: 30px;
+						text-align: center;
+						 color: $color-h2;
+					}
+			}
+		}	
+}

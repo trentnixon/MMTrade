@@ -1,0 +1,258 @@
+#Mcast{
+
+		h1{ }	
+		
+		p{
+			text-align: center;
+    		padding: 2px 16%;
+    		margin: 0 0 20px 0;
+		}	
+		img{
+		}
+		
+		.castItem{
+			position:relative;
+			padding:15px;
+			
+			
+			
+			
+			a{
+				
+				img{
+					width:100%;
+				}
+	
+				.overlay:hover{
+					color:white;
+					opacity: .8;
+				 	transition: opacity 0.7s;
+  					-webkit-transition: opacity 0.7s;
+				}
+	
+				.overlay{
+				background-color: black;
+				position: absolute;
+				width: 83%;
+    			height: 83%;
+				opacity: 0;
+				margin: 3%;
+				text-align: center;
+				color:white;
+				transition: opacity 0.7s;
+				-webkit-transition: opacity 0.7s;	
+		
+			div{
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				padding:0 10%;
+			
+				i{
+					font-size: 60px;
+					font-weight: 100;
+					margin-bottom: 10px;
+				}
+				h3{
+					font-family:$font-paragraph;
+					line-height: 21px;
+				}
+			}
+		}
+				h1{
+					    margin: 5px 20px;
+						font-size: 21px;
+						line-height: 26px;
+				}
+			}		
+		}
+}
+
+
+/* ********************************************************* */
+/* Ipad/Tablets * ***************************** */
+/* ********************************************************* */
+
+
+
+/* iPad pro (portrait) ----------- */
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) {
+	/* Home page Podcast Items */
+	#Mcast .castItem{ padding:15px !important;}
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : landscape) {
+	/* Home page Podcast Items */
+		
+	/* End Home Page */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+/* Home page Podcast Items */
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	/* Styles */	
+	#Mcast .castItem{ padding:10px;}
+	#Mcast .castItem a .overlay div i{font-size:16px;}
+	#Mcast .castItem a .overlay div h3{ font-size:12px;     line-height: 15px !important; }
+}
+
+/* ********************************************************* */
+/* Large Smart Phones * ***************************** */
+/* ********************************************************* */
+
+
+/* Catch ALl Phone Devices (portrait and landscape) ----------- */ 
+@media only screen and (max-device-width: 736px) {		
+	/* Styles */
+} 
+
+
+
+
+
+@media only screen and (max-device-width: 736px)and 
+	(orientation: portrait) {
+
+}
+
+/* iphone 6 plus (portrait and landscape) ----------- */
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: portrait){
+	/* Styles */
+
+	#Mcast .castItem{ padding:11px;}
+	#Mcast .castItem a .overlay div i{font-size:16px;}
+	#Mcast .castItem a .overlay div h3{ font-size:12px;     line-height: 15px !important; }
+	#Mcast p { text-align: left; padding: 0px 6%; margin: 0 0 10px 0; }
+}
+
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: landscape){
+	/* Styles */
+	
+	#Mcast .castItem{ padding:21px;}
+	#Mcast p { text-align: left; padding: 0px 6%; margin: 0 0 10px 0; }
+}
+
+
+/* iphone 6 (portrait and landscape) ----------- */
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: portrait)
+	{
+	/* Styles */
+		#Mcast .castItem{ padding:10px;}
+	#Mcast .castItem a .overlay div i{font-size:16px;}
+	#Mcast .castItem a .overlay div h3{ font-size:12px;     line-height: 15px !important; }
+	#Mcast p { text-align: left; padding: 0px 6%; margin: 0 0 10px 0; }
+}
+
+
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: landscape)
+	{
+	/* Styles */
+	#Mcast .castItem{ padding:19px;}
+	#Mcast p { text-align: left; padding: 0px 6%; margin: 0 0 10px 0; }
+
+}
+/* ********************************************************* */
+/* Smart Phones * ***************************** */
+/* ********************************************************* */
+
+
+
+
+/* Smartphones () ----------- */
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-height : 568px)
+ and (orientation: portrait){
+	/* Styles */
+	#Mcast .castItem{ padding:9px;}
+	#Mcast .castItem a .overlay div i{font-size:16px;}
+	#Mcast .castItem a .overlay div h3{ font-size:12px;     line-height: 15px !important; }
+	#Mcast p { text-align: left; padding: 0px 6%; margin: 0 0 10px 0; }
+}
+
+@media only screen and 
+	(min-device-width: 320px) and 
+	(max-device-width: 568px) and (orientation: landscape){
+	/* Styles */
+	#Mcast p { text-align: left; padding: 0px 6%; margin: 0 0 10px 0; }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	/* Styles */
+
+	
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-device-width  : 412px) and (orientation: portrait){
+/* Styles */
+
+}
+@media only screen 
+and (max-device-width  : 412px) and (orientation: landscape){
+	/* Styles */
+
+}
+
+@media only screen 
+and (max-device-width  : 360px) and (orientation: portrait){
+	/* Styles */
+
+	#Mcast .castItem{ padding:9px;}
+	#Mcast .castItem a .overlay div i{font-size:16px;}
+	#Mcast .castItem a .overlay div h3{ font-size:12px;     line-height: 15px !important; }
+	#Mcast p { text-align: left; padding: 0px 6%; margin: 0 0 10px 0; }
+}
+
+@media only screen 
+and (max-device-width  : 360px) and (orientation: landscape){
+	#Mcast p { text-align: left; padding: 0px 6%; margin: 0 0 10px 0; }
+}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

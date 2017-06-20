@@ -1,0 +1,320 @@
+/* **************************************************************** */
+/***** Footer *****/
+/* **************************************************************** */
+
+#footer{
+		background-color:$color-bg-Footer;
+		color:$color-footer;
+		text-align:center;
+		padding:60px 0 ;
+		
+		
+		.row{ margin:0 0 0px 100px ;}
+		
+		.SocialIcons{
+			.col-md-2:first-child{ margin-left: 12%; }
+			.col-md-2{padding:0;}
+		}
+		.StationLogos{
+			.col-md-2:first-child{ margin-left: 12%; }
+			.col-md-2{padding:0;}
+		}
+		p{
+			margin:20px 0 ;
+			font-size:14px;	
+			color:$color-footer;
+			
+			}
+			
+			
+			
+		ul{
+			margin:0 100px;
+			display: inline-block;
+			
+			li{
+				float:left;
+
+				font-size:14px;	
+				a{
+					color:$color-footer;	
+				}	
+				a:hover{
+				
+				}
+				span{
+					float:right;
+					margin: 0 30px;
+					color:$color-footer;
+				}
+			}	
+		
+		}	
+			
+		a{
+			
+			}
+		a:hover{
+			
+			}
+		
+		a.socialIcon{
+		
+			background-color: white;
+			padding: 13px 0;
+			border-radius: 50px;
+			width: 50px;
+			height: 50px;
+			display: block;
+			
+			.fa{
+				color:#8a8a8a;
+				font-size:25px;
+			}	
+		}
+		a.socialIcon:hover{ }
+		
+	}
+	
+	
+	
+/* ********************************************************************************** */
+/* Media Querys */
+/* ********************************************************************************** */
+
+/* ********************************************************* */
+/* Ipad/Tablets * ***************************** */
+/* ********************************************************* */
+
+
+
+/* iPad pro (portrait) ----------- */
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) {
+
+	#footer .row { margin: 0 0 0px 0; }
+	#footer ul { margin: 0px;}
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : landscape) {
+
+	#footer .row { margin: 0 0 0px 0; }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+/* Home page Podcast Items */
+	#footer ul { margin: 0px;}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	/* Styles */	
+	#footer .row { margin: 0 0 0px 0; }
+	#footer ul { margin: 0px;}
+	.SocialIcons{margin-bottom:20px;}
+	#footer .SocialIcons .col-md-2:first-child,#footer .StationLogos .col-md-2:first-child  { margin-left: 7%; }
+	#footer a.socialIcon{ display:inline-block;}
+	#footer ul li span {  margin: 0 7px; }
+}
+
+/* ********************************************************* */
+/* Large Smart Phones * ***************************** */
+/* ********************************************************* */
+
+
+/* Catch ALl Phone Devices (portrait and landscape) ----------- */ 
+@media only screen and (max-device-width: 736px) {		
+	/* Styles */
+} 
+
+
+
+
+
+@media only screen and (max-device-width: 736px)and 
+	(orientation: portrait) {
+
+}
+
+/* iphone 6 plus (portrait and landscape) ----------- */
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: portrait){
+	/* Styles */
+	#footer .row { margin: 0 0 0px 0; }
+	#footer ul { margin: 0px;}
+	.SocialIcons{margin-bottom:30px; display: flex; }
+	#footer .SocialIcons .col-md-2:first-child{  margin-left: 7%;}
+	#footer .StationLogos .col-md-2:first-child  { margin-left: 0%; }
+	#footer .StationLogos .col-md-2{ height: 60px; }
+	#footer a.socialIcon{ display:inline-block;}
+	#footer ul li span { display:none; }
+	#footer ul li {  width: 100%; margin: 5px 0; }
+
+}
+
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: landscape){
+	/* Styles */
+		#footer .row { margin: 0 0 0px 0; }
+	#footer ul { margin: 0px;}
+	.SocialIcons{margin-bottom:30px; display: flex; }
+	#footer .SocialIcons .col-md-2:first-child{  margin-left: 7%;}
+	#footer .StationLogos .col-md-2:first-child  { margin-left: 0%; }
+	#footer .StationLogos .col-md-2{ height: 60px;     width: 20%;}
+	#footer a.socialIcon{ display:inline-block;}
+	#footer ul li span { display:none; }
+	#footer ul li {  width: 100%; margin: 5px 0; }
+	
+}
+
+
+/* iphone 6 (portrait and landscape) ----------- */
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: portrait)
+	{
+	/* Styles */
+
+	#footer .row { margin: 0 0 0px 0; }
+	#footer ul { margin: 0px;}
+	.SocialIcons{margin-bottom:30px; display: flex; }
+	#footer .SocialIcons .col-md-2:first-child{  margin-left: 7%;}
+	#footer .StationLogos .col-md-2:first-child  { margin-left: 0%; }
+	#footer .StationLogos .col-md-2{ height: 60px; }
+	#footer a.socialIcon{ display:inline-block;}
+	#footer ul li span { display:none; }
+	#footer ul li {  width: 100%; margin: 5px 0; }
+}
+
+
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: landscape)
+	{
+	/* Styles */
+	#footer .row { margin: 0 0 0px 0; }
+	#footer ul { margin: 0px;}
+	.SocialIcons{margin-bottom:30px; display: flex; }
+	#footer .SocialIcons .col-md-2:first-child{  margin-left: 7%;}
+	#footer .StationLogos .col-md-2:first-child  { margin-left: 0%; }
+	#footer .StationLogos .col-md-2{ height: 60px;     width: 20%;}
+	#footer a.socialIcon{ display:inline-block;}
+	#footer ul li span { display:none; }
+	#footer ul li {  width: 100%; margin: 5px 0; }
+}
+/* ********************************************************* */
+/* Smart Phones * ***************************** */
+/* ********************************************************* */
+
+
+
+
+/* Smartphones () ----------- */
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-height : 568px)
+ and (orientation: portrait){
+	/* Styles */
+
+		#footer .row { margin: 0 0 0px 0; }
+	#footer ul { margin: 0px;}
+	.SocialIcons{margin-bottom:30px; display: flex; }
+	#footer a.socialIcon{padding: 8px 0;width: 40px; height: 40px;}
+	#footer .SocialIcons .col-md-2:first-child{  margin-left: 7%;}
+	#footer .StationLogos .col-md-2:first-child  { margin-left: 0%; }
+	#footer .StationLogos .col-md-2{ height: 60px; }
+	#footer a.socialIcon{ display:inline-block;}
+	#footer ul li span { display:none; }
+	#footer ul li {  width: 100%; margin: 5px 0; }
+}
+
+@media only screen and 
+	(min-device-width: 320px) and 
+	(max-device-width: 568px) and (orientation: landscape){
+	/* Styles */
+	#footer .row { margin: 0 0 0px 0; }
+	#footer ul { margin: 0px;}
+	.SocialIcons{margin-bottom:30px; display: flex; }
+	
+	#footer .SocialIcons .col-md-2:first-child{  margin-left: 7%;}
+	#footer .StationLogos .col-md-2:first-child  { margin-left: 0%; }
+	#footer .StationLogos .col-md-2{ height: 60px;     width: 20%;}
+	#footer a.socialIcon{ display:inline-block;}
+	#footer ul li span { display:none; }
+	#footer ul li {  width: 100%; margin: 5px 0; }
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	/* Styles */
+
+	
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-device-width  : 412px) and (orientation: portrait){
+/* Styles */
+
+}
+@media only screen 
+and (max-device-width  : 412px) and (orientation: landscape){
+	/* Styles */
+
+}
+
+@media only screen 
+and (max-device-width  : 360px) and (orientation: portrait){
+	/* Styles */
+#footer .row { margin: 0 0 0px 0; }
+	#footer ul { margin: 0px;}
+	.SocialIcons{margin-bottom:30px; display: flex; }
+	#footer a.socialIcon{padding: 8px 0;width: 40px; height: 40px;}
+	#footer .SocialIcons .col-md-2:first-child{  margin-left: 7%;}
+	#footer .StationLogos .col-md-2:first-child  { margin-left: 0%; }
+	#footer .StationLogos .col-md-2{ height: 60px; }
+	#footer a.socialIcon{ display:inline-block;}
+	#footer ul li span { display:none; }
+	#footer ul li {  width: 100%; margin: 5px 0; }
+}
+
+@media only screen 
+and (max-device-width  : 360px) and (orientation: landscape){
+	
+}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}	

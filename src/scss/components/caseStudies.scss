@@ -1,0 +1,216 @@
+#CaseStudies{
+	div{
+		h1{ }
+		p{ }
+		img{ }
+	}	
+}
+
+
+/* iPad pro (portrait) ----------- */
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) {
+	/* Home page Podcast Items */
+
+	#CaseStudies{ .caseItem { padding:13px !important;} }
+}
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : landscape) {
+	/* Home page Podcast Items */
+
+	#CaseStudies{.caseItem { }}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+/* Home page Podcast Items */
+
+
+	#CaseStudies{.caseItem { padding: 12px; }}
+
+
+}
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	/* Styles */	
+
+
+	#CaseStudies{
+		.caseItem {
+			padding: 9px;
+				.overlay{
+			
+				div{
+					i{
+						font-size: 40px;
+						}
+					h3{
+						line-height: 15px;
+    					font-size: 11px;
+					}	
+					
+					}
+			}
+		}
+	}
+
+}
+
+/* iphone 6 plus (portrait and landscape) ----------- */
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: portrait){
+	/* Styles */
+
+	#CaseStudies{
+		.caseItem {
+			    padding: 10px !important;
+				.overlay{
+					div{
+						i{
+							font-size: 40px;
+						}
+						h3{
+							line-height: 15px;
+    						font-size: 11px;
+						}	
+					}	
+			}
+		}
+	}
+
+}
+
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: landscape){
+	/* Styles */
+	
+	#CaseStudies{
+		.caseItem {
+				.overlay{}
+		}
+	}
+	
+}
+
+/* iphone 6 (portrait and landscape) ----------- */
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: portrait)
+	{
+	/* Styles */
+
+		#CaseStudies{
+			.caseItem{
+				padding: 8px; 
+					.overlay{
+			    	   div{
+						i{
+							font-size: 40px;
+						}
+						h3{
+							line-height: 15px;
+    						font-size: 11px;
+						}	
+					}
+				}
+			}
+		}
+
+
+}
+
+
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: landscape)
+	{
+	/* Styles */
+
+	#CaseStudies{
+		.caseItem {
+				.overlay{
+			      /*  width: 90%;
+   					height: 90%; */
+				}
+		}
+	}
+
+}
+
+/* Smartphones () ----------- */
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-height : 568px)
+ and (orientation: portrait){
+	/* Styles */
+	
+	#CaseStudies{
+		.caseItem {
+			    padding: 7px ;
+				.overlay{
+					div{
+						i{
+							font-size: 40px;
+						}
+						h3{
+							line-height: 15px;
+    						font-size: 11px;
+						}	
+					}	
+			}
+		}
+	}
+
+}
+
+@media only screen 
+and (max-device-width  : 412px) and (orientation: portrait){
+/* Styles */
+
+	#CaseStudies{
+		.caseItem {
+				.overlay{}
+		}
+	}
+}
+
+@media only screen 
+and (max-device-width  : 360px) and (orientation: portrait){
+	/* Styles */
+	#CaseStudies{
+		.caseItem {
+			    padding: 9px ;
+				.overlay{
+					div{
+						i{
+							font-size: 40px;
+						}
+						h3{
+							line-height: 15px;
+    						font-size: 11px;
+						}	
+					}	
+			}
+		}
+	}
+}
+
+@media only screen 
+and (max-device-width  : 360px) and (orientation: landscape){
+	
+}

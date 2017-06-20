@@ -1,0 +1,81 @@
+#Contact{
+	
+	h2{ font-weight:800;}
+	
+	ul{
+		margin:40px 0 ;
+		font-family:$font-header;
+		
+		li{
+			margin:15px 0 ;
+		}		
+		
+	}
+	
+	form{
+		font-family:$font-header;
+		position: relative;
+		
+		.form-group{
+			margin:10px 0;
+			
+			div{
+				
+				label{
+					line-height:34px;
+				}
+			
+				input.form-control{
+					@include base-form-styles(); 
+				
+				}
+				
+				textarea{
+					@include base-form-styles();
+					height:100px;
+				
+				}
+			}
+		}
+		
+		.btn-submitForm{
+					@include btn-style();
+				
+				}
+		.btn-submitForm:hover{
+					background-color: $color-p;
+			
+		}
+	
+		.btn-submitForm:disabled,.btn-submitForm[disabled]	{
+		
+			background-color:white;
+			border:1px solid $color-p;
+			color:$color-p;
+		}
+	
+		#FormSent{
+			background-color: white;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 101%;
+			padding: 20px;
+			text-align: center;
+			opacity:0;
+			z-index:-9999999;
+		
+		}
+		
+		#FormSent.display{
+			transition: opacity 0.7s;
+			-webkit-transition: opacity 0.7s;
+			opacity:1;
+			z-index:1;	
+		}
+	
+	}	
+	
+	
+}

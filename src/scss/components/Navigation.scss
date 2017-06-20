@@ -1,0 +1,191 @@
+/* Navbar Menu Default */ 
+
+.navbar-default {
+	
+		font-family:$font-nav;
+		color:$color-nav-a;
+    	border:none;
+    	border-radius: 0;
+    	margin-bottom: 0;
+    	width:100%;
+    	min-height: 50px;
+    	padding: 20px 0;
+    	background: #fff;
+    
+		transition: all 0.4s ease-in-out;
+    	-webkit-transition: all 0.4s ease-in-out;
+    	-moz-transition: all 0.4s ease-in-out;
+    	-o-transition: all 0.4s ease-in-out;
+    	-ms-transition: all 0.4s ease-in-out;
+
+		
+		.navbar-nav>.active>a,  
+		.navbar-nav>.active>a:hover, 
+		.navbar-nav>.active>a:focus 
+			{
+    			color: $color-nav-a-hover !important;
+				background-color: transparent;
+		}
+
+		.navbar-nav>.open>a, 
+		.navbar-nav>.open>a:hover,
+		.navbar-nav>.open>a:focus {
+    		color: $color-nav-a-hover !important;
+			background-color: transparent;
+		}
+
+		.navbar-nav>li>a {
+			color: $color-nav-a;
+			font-family:$font-nav;
+			font-weight: 100;
+			font-size: 14px;
+			text-transform:uppercase;
+		}
+		
+		.navbar-nav>li.is-current>a, .navbar-nav>li>a:hover {
+    		color: $color-nav-a-hover !important;
+		}
+		
+		.navbar-toggle {
+		   color: $color-nav-a;
+		}
+		
+		.navbar-toggle:hover,
+		.navbar-toggle:focus {
+		  color: $color-nav-a;
+		}
+		.navbar-toggle .icon-bar {
+		  color: $color-nav-a-hover ;
+		}
+}
+
+/* Logo and Branding */
+	.navbar-brand{
+    	color: $color-nav-a !important;
+		padding: 0;
+		height: inherit;
+		font-size: 14px;
+		font-weight: 100;
+			
+		img{
+			float:left;
+			margin-right:20px;
+		}
+		span{
+				color: $color-nav-a;
+				font-size:14px;
+	    		line-height: 52px;
+			}
+	}
+
+
+/* ** Nav bar Top ** */
+.navbar-default.menu-top{
+	background: #fff;
+    width:100%;
+
+	li a{
+    	color: $color-nav-a !important;
+	}
+	
+	.navbar-brand{
+    	color: #f3f3f3 !important;
+	}
+}
+
+
+/* Navbar Menu shrink */
+ .navbar-default.menu-shrink{
+    	
+		padding: 10px 0;
+		background-color: #fff;
+    	border-bottom:none;
+    	width:100%;
+
+	.navbar-brand{
+    	color: $color-nav-a !important;
+	}
+	
+	li a{
+    	color: $color-nav-a!important;
+	}
+	
+}
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+/* Home page Podcast Items */
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	/* Styles */	
+.nav > li > a{ padding:10px 6px;}
+}
+
+/* iphone 6 plus (portrait and landscape) ----------- */
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: portrait){
+	/* Styles */
+.navbar-brand{ margin-left:20px;}
+}
+
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: landscape){
+	/* Styles */
+	.navbar-brand{ margin-left:20px;}
+}
+
+
+
+/* iphone 6 (portrait and landscape) ----------- */
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: portrait)
+	{
+	/* Styles */
+
+	.navbar-brand{ margin-left:20px;}
+}
+
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: landscape)
+	{
+	/* Styles */
+.navbar-brand{ margin-left:20px;}
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+	and (min-device-width : 320px) 
+	and (max-device-width : 480px) {
+		/* Styles */
+
+	.navbar-brand{ margin-left:20px;}
+
+}

@@ -1,0 +1,395 @@
+#About{
+	div{
+		h1{ margin: 0 0 60px 0; }
+		img{ }
+		p{ margin:20px 10px; }
+	}	
+	
+	
+	.Map{
+		position:relative;
+		overflow: hidden;
+		padding-bottom: 40px;
+		
+		>img{ margin-left:5%; }
+		
+		a.floatingLink{
+			position:absolute;
+			}
+			
+		#Logo_4bc{ top: 155px; right: 6px;}
+		#Logo_2gb{top: 248px;  right: 47px;}
+		#Logo_3aw{ bottom: 25px; left: 190px;}
+		#Logo_6pr{ bottom: 60px; left: 8%;}
+		
+		
+		}
+	
+}
+
+/* ********************************************************* */
+/* Ipad/Tablets * ***************************** */
+/* ********************************************************* */
+
+
+
+/* iPad pro (portrait) ----------- */
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) {
+	/* Home page Podcast Items */
+	#About{
+		div{
+			
+			p{ margin: 20px 0 20px 15% !important;}
+		}
+		.Map{
+			>img{ width:60%; }
+			
+			#Logo_4bc{ top: 117px;  right: 0;}
+			#Logo_2gb{top: 189px; right: 30px;}
+			#Logo_3aw{    bottom: 17px; left: 137px;}
+			#Logo_6pr{    bottom: 40px; left: 30px;}
+			
+		}
+	}
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : landscape) {
+	/* Home page Podcast Items */
+		#About{
+		div{
+			p{ margin: 20px 0 20px 15% !important;}
+		}
+		}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+	
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+/* Home page Podcast Items */
+#About{
+		div{
+			p{ margin:20px 5% ;}
+		}
+		.Map{
+			>img{ width:60%; }
+			
+			#Logo_4bc{ top: 117px;  right: 0;}
+			#Logo_2gb{top: 189px; right: 30px;}
+			#Logo_3aw{    bottom: 17px; left: 137px;}
+			#Logo_6pr{    bottom: 40px; left: 30px;}
+			
+		}
+	}
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1023px) 
+and (orientation : portrait) {
+	/* Styles */	
+	#About{
+		div{
+			p{ margin:20px 5% ;}
+		}
+		.Map{
+			>img{ margin-left:20%; }
+			
+			#Logo_4bc{top: 158px; right: 27px;}
+			#Logo_2gb{top: 247px; right: 79px;}
+			#Logo_3aw{bottom: 22px; left: 310px;}
+			#Logo_6pr{bottom: 59px; left: 154px;}
+		}
+	}
+}
+
+/* ********************************************************* */
+/* Large Smart Phones * ***************************** */
+/* ********************************************************* */
+
+
+/* Catch ALl Phone Devices (portrait and landscape) ----------- */ 
+@media only screen and (max-device-width: 736px) {		
+	/* Styles */
+} 
+
+
+
+
+
+@media only screen and (max-device-width: 736px)and 
+	(orientation: portrait) {
+
+}
+
+/* iphone 6 plus (portrait and landscape) ----------- */
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: portrait){
+	/* Styles */
+	#About{
+		div{
+			p{ margin:15px 0% ;}
+		}
+		
+		.Map{
+			>img{ margin-left:20%; }
+			
+			a{
+				img{
+					width:70% !important;
+				}	
+			}
+			
+			#Logo_4bc{top: 97px !important; right: -14px !important;}
+			#Logo_2gb{top: 155px !important; right: 15px !important;}
+			#Logo_3aw{bottom: 26px !important; left: 97px !important;}
+			#Logo_6pr{bottom: 48px !important; left: 6px !important;}
+		}
+		
+		
+	}
+
+
+}
+
+@media only screen and 
+	(max-device-width: 736px) and 
+	(min-device-width: 414px) and 
+	(orientation: landscape){
+	/* Styles */
+	
+	#About{
+		div{
+			p{ margin:15px 0% ;}
+		}
+		.Map{
+
+			>img{     margin-left: 0; width: 60%; }
+			
+			a{
+				img{
+					
+				}	
+			}
+			
+			#Logo_4bc{     top: 182px; right: 105px;}
+			#Logo_2gb{top: 288px; right: 160px;}
+			#Logo_3aw{    bottom: 26px; left: 208px;}
+			#Logo_6pr{ bottom: 71px; left: 20px;}		
+		}
+	}
+}
+
+
+/* iphone 6 (portrait and landscape) ----------- */
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: portrait)
+	{
+	/* Styles */
+	#About{
+		div{
+			p{ margin:15px 0% ;}
+		}
+		
+		.Map{
+
+			>img{     margin-left: 0; width: 60%; }
+			
+			a{
+				img{
+					width:65%;
+				}	
+			}
+			
+			#Logo_4bc{    top: 88px; right: -30px;}
+			#Logo_2gb{top: 139px; right: 0px;}
+			#Logo_3aw{    bottom: 23px; left: 93px;}
+			#Logo_6pr{bottom: 48px ; left: 6px ;}
+			
+		}
+	}
+}
+
+
+@media only screen and 
+	(min-device-width: 375px) and 
+	(max-device-width: 667px) and (orientation: landscape)
+	{
+	/* Styles */
+	#About{
+		div{
+			p{ margin:15px 0% ;}
+		}
+		
+		.Map{
+			>img{width:60%; margin-left:5%; }
+			
+			a{
+				img{
+					
+				}	
+			}
+			
+			#Logo_4bc{top: 162px; right: 8%;}
+			#Logo_2gb{top: 258px; right: 16%;}
+			#Logo_3aw{bottom: 27px;  left: 32%;}
+			#Logo_6pr{ bottom: 66px; left: 7%;}
+			
+		}
+	}
+}
+/* ********************************************************* */
+/* Smart Phones * ***************************** */
+/* ********************************************************* */
+
+
+
+
+/* Smartphones () ----------- */
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-height : 568px)
+ and (orientation: portrait){
+	/* Styles */
+/* Styles */
+	#About{
+		div{
+			p{ margin:15px 0% ;}
+		}
+		
+		.Map{
+			>img{width:60%; margin-left:5%; }
+			
+			a{
+				img{
+					width:50%;
+				}	
+			}
+			
+			#Logo_4bc{top: 73px !important; right: -67px !important;}
+			#Logo_2gb{top: 118px !important; right: -39px !important;}
+			#Logo_3aw{ bottom: 27px !important; left: 88px !important;}
+			#Logo_6pr{bottom: 45px !important; left: 19px !important;}
+		}
+	}
+}
+
+@media only screen and 
+	(min-device-width: 320px) and 
+	(max-device-width: 568px) and (orientation: landscape){
+	/* Styles */
+	
+	#About{
+		div{
+			p{ margin:15px 0% ;}
+		}
+		
+		.Map{
+			>img{width:60%; margin-left:5%; }
+			
+			a{
+				img{
+					
+				}	
+			}
+			
+			#Logo_4bc{    top: 135px; right: 3%;}
+			#Logo_2gb{    top: 215px; right: 11%;}
+			#Logo_3aw{    bottom: 19px;  left: 32%;}
+			#Logo_6pr{ 	bottom: 52px; left: 6%;}
+			
+		}
+	}
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	/* Styles */
+
+	
+	
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-device-width  : 412px) and (orientation: portrait){
+/* Styles */
+#About{
+		div{
+			p{ margin:15px 0% ;}
+		}
+		
+		.Map{
+			>img{width:60%; margin-left:5%; }
+			
+			a{
+				img{
+					width:50%;
+				}	
+			}
+			
+			#Logo_4bc{top: 99px; right: -39px;}
+			#Logo_2gb{top: 157px;  right: -6px;}
+			#Logo_3aw{ bottom: 30px; left: 136px;}
+			#Logo_6pr{ bottom: 57px; left: 30px;}
+		}
+	}
+
+}
+@media only screen 
+and (max-device-width  : 412px) and (orientation: landscape){
+	/* Styles */
+	
+
+}
+
+@media only screen 
+and (max-device-width  : 360px) and (orientation: portrait){
+	/* Styles */
+	#About{
+		div{
+			p{ margin:15px 0% ;}
+		}
+		
+		.Map{
+			>img{width:60%; margin-left:5%; }
+			
+			a{
+				img{
+					width:50%;
+				}	
+			}
+			
+			#Logo_4bc{top: 86px; right: -54px;}
+			#Logo_2gb{    top: 135px; right: -22px;}
+			#Logo_3aw{ bottom: 30px; left: 111px;}
+			#Logo_6pr{ bottom: 51px;  left: 25px;}
+		}
+	}
+}

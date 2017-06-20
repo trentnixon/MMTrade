@@ -1,0 +1,80 @@
+
+body{
+	background-color:$color-bg;	
+}
+
+
+
+
+/***** Header *****/
+
+.top-content {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+ 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.inner-bg {
+    padding: 0;
+	padding-top: 180px;
+	padding-bottom: 120px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.top-content .text {
+	padding-top: 50px;
+}
+
+.top-content h2 {
+	font-family: $font-header;
+    color: #f3f3f3;
+    font-size: 48px;
+    line-height: 54px;
+	margin: 10px 0 30px 0;
+	font-weight: 400; 
+	text-align: center;
+}
+
+.top-content .logo h1 {
+	margin: 0;
+}
+
+.top-content .logo a {
+	display: inline-block;
+    font-size: 58px;
+    line-height: 68px;
+	font-weight: 600; 
+    color: #0dc0c0;
+}
+
+.top-content .logo a:hover { 
+    color: #0dc0c0;
+}
+
+
+
+.top-content .top-button {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.top-description {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.top-description p {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+}
+
+
+
+
