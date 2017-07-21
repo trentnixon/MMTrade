@@ -5,7 +5,7 @@ import SectionHeader from "../global/SectionHeader";
 import SectionText from "../global/SectionText";
 import SectionImg from "../global/SectionImage";
 
-let Header,Copy,Mcasts,Logo;
+let Header,Copy,Mcasts,Logo, ClickHere, DisplayMcast;
 
 @connect((store) =>{
 		return{
@@ -23,10 +23,16 @@ export default class Mcast extends React.Component {
 	
 			//console.log(nextProps.MCAST.PODCASTS.data.Mcast["0"])
 		  	let UI = nextProps.UI;	
-		  	let DisplayMcast = nextProps.MCAST.PODCASTS.data.Mcast["0"];
+		  	DisplayMcast = nextProps.MCAST.PODCASTS.data.Mcast["0"];
  		
 			Header = DisplayMcast.Header;
-			Copy = DisplayMcast.Text.split('\n').map((item, key) => { return <SectionText key={key} text={item}/>})
+			
+			ClickHere = <a href={DisplayMcast.LinkText}>{DisplayMcast.LinkText}</a>
+			
+			Copy = DisplayMcast.Text.split('\n').map((item, key) => { 
+					return (<p key={key}>{item}</p>)
+				})
+			
 			Logo = UI.IMGPATH+DisplayMcast.Logo;
 
 			Mcasts =DisplayMcast.Mcast.map((cast,i)=>{
@@ -40,19 +46,27 @@ export default class Mcast extends React.Component {
 											<h3>Listen to {cast.title} on mcast.com.au</h3>
 										</div>
 									</div>
-								
-								
 									<SectionImg img={cast.img} AddClass="img-responsive center-block"/>
-									
 								</a>
 							</div>
-					)
-				})
+				)
+		})
+		
+	}
+
+	componentDidUpdate(prevProps, prevState){
+		var UpdateThis = this.props.MCAST.PODCASTS.data.Mcast["0"]
+		ClickHere = '<a href="'+UpdateThis.LinkText+'"> '+UpdateThis.LinkText+'</a>';
+
+		$( "#Mcast p" ).last().append( ClickHere );
+		
 	}
 
   render() {
 	
-    return (
+	
+    
+	return (
       	<section id="Mcast">
 			<div class="container">
 				<div class="row">
@@ -60,16 +74,12 @@ export default class Mcast extends React.Component {
 						<SectionHeader text={Header}/>
 					</div>			
 				</div>
-				
 				<div class="row">	
 					{Copy}
-					
 				</div>
 				<div class="row">
 					{Mcasts}
-					
 				</div>
-				<p><br /><a href="http://mcast.com.au/#/audio-for-brands" target="_blank">Click here </a> to find out more about how a branded podcast could work for you</p>
 			</div>
 		</section>
     );

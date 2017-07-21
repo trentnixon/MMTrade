@@ -1,6 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 
+//import  { WufooForm  } from "react-wufoo-embed";
+var Wufoo = require('react-wufoo-embed');
+
 import SectionHeader from "../global/SectionHeader";
 import ContactDetails from "./Components/ContactDetails"
 import ContactH2Title from "./Components/ContactLocationTitle"
@@ -43,8 +46,8 @@ export default class Contact extends React.Component {
 			//  const script = document.createElement("script");
         	//script.src = "https://form.jotformpro.com/jsform/63545692608970";
         	//script.async = true;
-			//document.getElementById("Contact").appendChild(script); 
-			
+			//document.getElementById("Contact").appendChild(script);
+			// <ContactForm Mailto={ContactData.ContactEmail} submitForm={SubmitForm}/> 
 	}
 		
   render() {
@@ -61,7 +64,7 @@ export default class Contact extends React.Component {
 			
 			<div class="col-md-6 col-sm-6">
 				<ContactH2Title text={ContactData.FormTitle} />
-				<ContactForm Mailto={ContactData.ContactEmail} submitForm={SubmitForm}/>
+				<Wufoo userName="macquariemedia" formHash="mct9uk20c16hua" header="hide"/>	
 			</div>
 		</div>	 
       </section>

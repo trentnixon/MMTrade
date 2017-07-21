@@ -10,9 +10,8 @@ export default class FormSentConfirmation extends React.Component {
 			<div id="FormSent">
 				<div class="row">
 					<div class="col-md-12">
-					<h2>Form animation completed.</h2>
-					<h2>Form has not been sent</h2>
-					<p>Thank you message required</p>
+					<h2>Thank you for your inquiry.</h2>
+					<p>A representative from Macquarie Media will be in touch shortly.</p>
 				</div>
 			</div>
 			</div>

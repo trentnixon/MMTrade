@@ -29,7 +29,7 @@ export default class Showreels extends React.Component {
 			
 			DisplayVideos = Playlist.map((videos, i)=>{
 				return(
-					<div key={"Video_"+i} class="col-md-4 col-sm-4 col-xs-6 caseItem">
+					<div key={"Video_"+i} class="col-md-3 col-sm-3 col-xs-6 caseItem">
 						<ModalOverlay id={"#video_"+i} title={videos.title}/>
 						<SectionImage 
 							img={ImgPath+videos.thumbnailID} 

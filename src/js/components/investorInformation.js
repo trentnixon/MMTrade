@@ -16,11 +16,19 @@ var Copy,Header,Docs, workplace,Announcements, II,PDFPATH;
 export default class Layout extends React.Component {
   	constructor() { super();}
 	
+	
+	onPageLoad(){
+		//event.preventDefault();
+		//var target = event.target 
+		var Offset = $("#Header").offset().top - 80;
+		$('html, body').animate({scrollTop: Offset},'slow','swing');
+	}	
+	
+	
 	componentWillMount(){
 		 
 		 II = this.props.II.InvestorInformation.data;
 		 PDFPATH = this.props.UI.PDFPATH;
-		 console.log()
 		 Header = II.Header
 		 Copy = II.Text.split('\n').map((item, key) => { return <SectionText key={key} text={item}/>})
 	
@@ -63,14 +71,20 @@ export default class Layout extends React.Component {
 				})
 		}
 
+	componentDidMount(){ this.onPageLoad(); }
+
   render() {
    return (
    			<div>
 				<Navigation {... this.props}/>
 					<section class="secondary" id="Information" >
 						<div class="container">
-							<h1>{Header}</h1>
-							{Copy}
+							<div class="col-md-12" id="Header">
+								<div class="row">
+									<h1>{Header}</h1>
+									{Copy}
+								</div>
+							</div>
 							<div class="col-md-12" id="Annual_Reports">
 								<div class="row">
 									<h1>Annual Reports</h1>

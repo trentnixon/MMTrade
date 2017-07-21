@@ -29,9 +29,13 @@ export default class MediaKits extends React.Component {
 			Surveys  = FetchMediaKit.List;
 
 			DisplayMediaKit = Surveys.map((survey, i)=>{
+					var DivClass="col-md-2  col-sm-2 col-xs-6 DisplaymediaKits text-center";
+					if(i==0){
+						DivClass="col-md-2  col-md-offset-1  col-sm-offset-1 col-sm-2 col-xs-6 DisplaymediaKits text-center"
+					}
 					
 					return(
-							<div key={i} class="col-md-3  col-sm-3 col-xs-6 DisplaymediaKits text-center">
+							<div key={i} class={DivClass}>
 								<a href={PDFPath+survey.pdf} target="_blank">
 									
 									<div class="overlay"> 
